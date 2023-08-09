@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#get the python file name from the environment variable PYFILE
+pyfile="$PYFILE"
+
+#check if the PYFILE env variable is set
+if [ -z "$0-run" ]; then
+echo "Error: env not set"
+exit 1
+fi
+
+
+#check if python file exists
+if [ ! -f "$pyfile" ]; then
+echo "Error: file not found"
+exit 1
+fi
