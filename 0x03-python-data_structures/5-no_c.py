@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 def no_c(my_string):
     diction = {ord(char): None for char in "cC"}
